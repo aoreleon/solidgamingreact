@@ -1,0 +1,17 @@
+// Patron de colores
+$principal: #09264E;
+$dropdown-bg-color: #226aa5;
+
+// Modificar variables bootstrap
+$primary: $principal;
+$enable-shadows: true;
+$enable-gradients: true;
+$dropdown-bg: $dropdown-bg-color;
+$dropdown-link-hover-bg: $principal;
+
+@import "../libs/bootstrap/scss/bootstrap";
+
+.nav-gradient-custom{
+    background: rgb(6,63,94);
+    background: linear-gradient(90deg, rgba(6,63,94,1) 0%, rgba(8,35,76,1) 35%, rgba(21, 0, 59, 0.582) 100%);
+}
