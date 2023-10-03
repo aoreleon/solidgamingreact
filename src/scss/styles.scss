@@ -8,10 +8,19 @@ $enable-shadows: true;
 $enable-gradients: true;
 $dropdown-bg: $dropdown-bg-color;
 $dropdown-link-hover-bg: $principal;
+$carousel-transition-duration: .7s;
+$carousel-transition: transform $carousel-transition-duration ease-in-out;
+
+
+
 
 @import "../libs/bootstrap/scss/bootstrap";
 
 .nav-gradient-custom{
     background: rgb(6,63,94);
     background: linear-gradient(90deg, rgba(6,63,94,1) 0%, rgba(8,35,76,1) 35%, rgba(21, 0, 59, 0.582) 100%);
+}
+
+.carousel > .carousel-inner > .carousel-item > .nav-link > img{    
+    height:680px;
 }

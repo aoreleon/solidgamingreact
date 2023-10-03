@@ -6749,10 +6749,10 @@ textarea.form-control-lg {
   margin-right: -100%;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
-  -webkit-transition: -webkit-transform 0.6s ease-in-out;
-  transition: -webkit-transform 0.6s ease-in-out;
-  transition: transform 0.6s ease-in-out;
-  transition: transform 0.6s ease-in-out, -webkit-transform 0.6s ease-in-out;
+  -webkit-transition: -webkit-transform 0.7s ease-in-out;
+  transition: -webkit-transform 0.7s ease-in-out;
+  transition: transform 0.7s ease-in-out;
+  transition: transform 0.7s ease-in-out, -webkit-transform 0.7s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
   .carousel-item {
@@ -6796,8 +6796,8 @@ textarea.form-control-lg {
 .carousel-fade .active.carousel-item-end {
   z-index: 0;
   opacity: 0;
-  -webkit-transition: opacity 0s 0.6s;
-  transition: opacity 0s 0.6s;
+  -webkit-transition: opacity 0s 0.7s;
+  transition: opacity 0s 0.7s;
 }
 @media (prefers-reduced-motion: reduce) {
   .carousel-fade .active.carousel-item-start,
@@ -13445,4 +13445,8 @@ textarea.form-control-lg {
   background: rgb(6, 63, 94);
   background: -webkit-gradient(linear, left top, right top, from(rgb(6, 63, 94)), color-stop(35%, rgb(8, 35, 76)), to(rgba(21, 0, 59, 0.582)));
   background: linear-gradient(90deg, rgb(6, 63, 94) 0%, rgb(8, 35, 76) 35%, rgba(21, 0, 59, 0.582) 100%);
+}
+
+.carousel > .carousel-inner > .carousel-item > .nav-link > img {
+  height: 680px;
 }/*# sourceMappingURL=styles.css.map */
