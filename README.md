@@ -1,0 +1,2 @@
+# solidgamingreact
+Revista de videojuegos
