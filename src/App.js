@@ -3,9 +3,6 @@ import Navbar from './components/navbar';
 import Home from './pages/home';
 import Analisis from './pages/analisis';
 import Noticias from './pages/noticias';
-// import Noticias from './pages/noticias';
-// import Analisis from './pages/analisis';
-// import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   let component
@@ -23,7 +20,7 @@ function App() {
   }
   return (
     <>
-      <Navbar />
+      <Navbar />           
       {component}
     </>
   );

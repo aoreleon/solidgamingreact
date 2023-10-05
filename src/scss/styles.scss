@@ -1,6 +1,8 @@
 // Patron de colores
 $principal: #09264E;
-$dropdown-bg-color: #226aa5;
+$dropdown-bg-color: #31444F;
+$xbox-color: #117C11;
+$sony-color: #0112FE;
 
 // Modificar variables bootstrap
 $primary: $principal;
@@ -8,19 +10,83 @@ $enable-shadows: true;
 $enable-gradients: true;
 $dropdown-bg: $dropdown-bg-color;
 $dropdown-link-hover-bg: $principal;
-$carousel-transition-duration: .7s;
+$carousel-transition-duration: .9s;
 $carousel-transition: transform $carousel-transition-duration ease-in-out;
-
-
-
+$carousel-control-color: $principal;
+$border-color: $principal;
+$card-box-shadow: 0px 0px 5px 1px $sony-color;
+$card-box-shadow-xbox: 0px 0px 5px 1px $xbox-color;
+$navbar-nav-link-padding-x: 1rem;
 
 @import "../libs/bootstrap/scss/bootstrap";
 
+//Home Page 
+#header{
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+.nav{
+    transition-timing-function: ease-in;
+    transition: 0.5s;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    margin-bottom: 0px !important;
+}
+.navbar{
+    transition-timing-function: ease-in;
+    transition: 0.5s;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    margin-bottom: 0px !important;
+}
 .nav-gradient-custom{
     background: rgb(6,63,94);
-    background: linear-gradient(90deg, rgba(6,63,94,1) 0%, rgba(8,35,76,1) 35%, rgba(21, 0, 59, 0.582) 100%);
+    background: linear-gradient(90deg, rgb(166,12,35,0.2) 0%, rgb(160,170,162,0.6) 35%, rgb(35,55,65,1) 100%);
+}
+.carousel-inner > img{
+    height: 583px;
+}
+.container-home{
+    height: 100vh;
+    overflow: auto;  
+    scroll-snap-type: y proximity; 
+}
+.carousel-container{
+    scroll-snap-align: start;
 }
 
-.carousel > .carousel-inner > .carousel-item > .nav-link > img{    
-    height:680px;
+blockquote p {
+    font-size: 2rem !important;    
+}
+// Agregar linea debajo para separar titulo con cards
+.div-sony-container{    
+    border-top: 2px solid $sony-color;
+    border-bottom: 2px solid $sony-color;
+    padding: auto;
+    scroll-snap-align: start;
+    
+}
+.div-xbox-container{    
+    border-top: 2px solid $xbox-color;
+    border-bottom: 2px solid $xbox-color;
+    padding: auto;
+    scroll-snap-align: start;
+}
+.card-sony-container{
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+}
+.card-xbox-container{
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;    
+}
+.card-xbox-container > .row > .col > .card{
+    box-shadow: 0px 0px 5px 1px $xbox-color;
 }
