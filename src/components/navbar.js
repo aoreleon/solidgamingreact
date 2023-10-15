@@ -1,24 +1,25 @@
-import React, { useEffect, useState } from 'react';
+// import React, { useEffect, useState } from 'react';
 
 export default function Navbar() {
-  const [show, setShow] = useState(true)
-  const controlNavbar = () =>{
-    if(window.scrollY > 100){
-      setShow (false)
-    }else{
-      setShow(true)
-    }
-  }
+  // const [show, setShow] = useState(true)
+  // const controlNavbar = () =>{
+  //   if(window.scrollY > 100){
+  //     setShow (false)
+  //   }else{
+  //     setShow(true)
+  //   }
+  // }
 
-  useEffect(() => {
-    window.addEventListener('scroll', controlNavbar)
-    return() => {
-      window.removeEventListener('scroll', controlNavbar)
-    }
-  }, [])
+  // useEffect(() => {
+  //   window.addEventListener('scroll', controlNavbar)
+  //   return() => {
+  //     window.removeEventListener('scroll', controlNavbar)
+  //   }
+  // }, [])
+  // className={`nav ${show && 'navbar'}`} 
 
   return(       
-    <nav className={`nav ${show && 'navbar'}`}  class="navbar navbar-expand-lg bg-primary nav-gradient-custom" data-bs-theme="dark" >
+    <nav class="navbar navbar-expand-lg bg-primary nav-gradient-custom" data-bs-theme="dark" >
           <div class="container-fluid">
             <a class="navbar-brand" href="/">
               <img src={require('../images/Logo2.jpeg')} alt="Logo" width="70" height="60"/>

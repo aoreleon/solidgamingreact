@@ -13447,22 +13447,7 @@ textarea.form-control-lg {
   z-index: 1000;
 }
 
-.nav {
-  -webkit-transition-timing-function: ease-in;
-          transition-timing-function: ease-in;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  position: fixed;
-  width: 100%;
-  z-index: 1000;
-  margin-bottom: 0px !important;
-}
-
 .navbar {
-  -webkit-transition-timing-function: ease-in;
-          transition-timing-function: ease-in;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
   position: fixed;
   width: 100%;
   z-index: 1000;
